@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="container" class="container">
+  <section class="content">
+    <div class="image">
+  <img src="images/icon-star.svg" alt="icon-star" class="star-icon" width="17" height="16">
+    </div>
+    <h1 class="heading">
+      How did we do?
+    </h1>
+    <p class="paragraph">
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+    </p>
+  </section>
+  <form id="rating-form" class="rating-form">
+  <div class="rating">
+    <label for="rating-1" class="rating-form_label">
+      <input type="radio" id="rating-1" class="rating-form_input" name="rating" value="1" >
+      <span class="rating-form_text">1</span>
+    </label>
+
+    <label for="rating-2" class="rating-form_label">
+      <input type="radio" id="rating-2" class="rating-form_input" name="rating" value="2" >
+      <span class="rating-form_text">2</span>
+    </label>
+
+    <label for="rating-3" class="rating-form_label">
+      <input type="radio" id="rating-3" class="rating-form_input" name="rating" value="3" >
+      <span class="rating-form_text">3</span>
+    </label>
+
+    <label for="rating-4" class="rating-form_label">
+      <input type="radio" id="rating-4" class="rating-form_input" name="rating" value="4" >
+      <span class="rating-form_text">4</span>
+    </label>
+
+    <label for="rating-5" class="rating-form_label">
+      <input type="radio" id="rating-5" class="rating-form_input" name="rating" value="5" >
+      <label class="rating-form_text" for="rating-5">5</label>
+    </label>
+  </div>
+  <div class="button">
+    <button id="rating-submit" class="btn" type="submit" disabled>Submit</button>
+  </div>
+</form>
+</section>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<section id="thank-you" class="thank-you">
+  <img src="images/illustration-thank-you.svg" alt="thank you image" class="thank-you_hero" width="162" height="108">
+  <p class="thank-you_feedback">
+  You selected <span id="user-rating"></span> out of 5
+  </p>
+  <h1 class="thank-you_heading">
+  Thank you!
+  </h1>
+  <p class="thank-you_note">
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+  </p>
+</section>
+  <!-- Thank you state end -->
+  <script src="script.js"></script>
+</body>
+</html>
